@@ -35,7 +35,7 @@ const Desktop = () => {
                         onClick={() => setCurrentDisplay(ContentType.AboutMe)}
                     />
                     <Icon
-                        imgSrc='src/assets/icons/projects.png'
+                        imgSrc={import.meta.env.BASE_URL + 'src/assets/icons/projects.png'}
                         title='Projects'
                         onClick={() => {
                             if(projectsFolder) {
