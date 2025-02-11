@@ -146,7 +146,7 @@ const Desktop = () => {
                         key='main-metalor'
                         titleBar='https://www.Jacob-Lieber.com/jobs/Metalor'
                         image='/assets/job-logos/metalor-logo.png'
-                        imageStyle={{ minWidth: '64px'}}
+                        imageStyle={{ minWidth: '64px' }}
                         data-grid={{ i: 'main-metalor', x: 5, y: 33, w: 10, h: 6 }}
                     />
                 }
@@ -155,7 +155,7 @@ const Desktop = () => {
                         key='main-fortify'
                         titleBar='https://www.Jacob-Lieber.com/jobs/Fortify'
                         image='/assets/job-logos/fortify-logo.png'
-                        imageStyle={{ minWidth: '64px'}}
+                        imageStyle={{ minWidth: '64px' }}
                         data-grid={{ i: 'main-fortify', x: 16, y: 33, w: 10, h: 6 }}
                     />
                 }
