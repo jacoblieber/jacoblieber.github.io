@@ -30,12 +30,12 @@ const Desktop = () => {
             <div className='sidebar'>
                 <div className='nav-icons'>
                     <Icon
-                        imgSrc='src/assets/icons/about-me.png'
+                        imgSrc='/assets/icons/about-me.png'
                         title='About'
                         onClick={() => setCurrentDisplay(ContentType.AboutMe)}
                     />
                     <Icon
-                        imgSrc={import.meta.env.BASE_URL + 'src/assets/icons/projects.png'}
+                        imgSrc='/assets/icons/projects.png'
                         title='Projects'
                         onClick={() => {
                             if(projectsFolder) {
@@ -46,7 +46,7 @@ const Desktop = () => {
                         }}
                     />
                     <Icon
-                        imgSrc='src/assets/icons/contact.png'
+                        imgSrc='/assets/icons/contact.png'
                         title='Contact'
                         onClick={() => setCurrentDisplay(ContentType.Contact)}
                     />
@@ -58,22 +58,22 @@ const Desktop = () => {
                         onClick={closeFolder}
                     >
                         <Icon 
-                            imgSrc='src/assets/icons/capstone.png'
+                            imgSrc='/assets/icons/capstone.png'
                             title='Capstone Project'
                             onClick={() => setCurrentDisplay(ContentType.Capstone)}
                         />
                         <Icon 
-                            imgSrc='src/assets/icons/stackunderflow.png'
+                            imgSrc='/assets/icons/stackunderflow.png'
                             title='Software Eng.'
                             onClick={() => setCurrentDisplay(ContentType.Stackunderflow)}
                         />
                         <Icon 
-                            imgSrc='src/assets/icons/Ethylbenzene.png'
+                            imgSrc='/assets/icons/Ethylbenzene.png'
                             title='Process Design'
                             onClick={() => setCurrentDisplay(ContentType.Ethylbenzene)}
                         />
                         <Icon 
-                            imgSrc='src/assets/icons/firefox.png'
+                            imgSrc='/assets/icons/firefox.png'
                             title='This Website'
                             onClick={() => setCurrentDisplay(ContentType.Website)}
                         />
@@ -119,7 +119,7 @@ const Desktop = () => {
                     <Window 
                         key='main'
                         titleBar='https://www.Jacob-Lieber.com'
-                        image='src/assets/headshot.jpg'
+                        image='/assets/headshot.jpg'
                         imageStyle={{ minWidth: '230px', width: '90%'}}
                         title='Hey, I&#39;m Jacob'
                         data-grid={{ i: 'main', x: 5, y: 2, w: 35, h: 28 }}
@@ -145,7 +145,7 @@ const Desktop = () => {
                     <Window
                         key='main-metalor'
                         titleBar='https://www.Jacob-Lieber.com/jobs/Metalor'
-                        image='src/assets/job-logos/metalor-logo.png'
+                        image='/assets/job-logos/metalor-logo.png'
                         imageStyle={{ minWidth: '64px'}}
                         data-grid={{ i: 'main-metalor', x: 5, y: 33, w: 10, h: 6 }}
                     />
@@ -154,7 +154,7 @@ const Desktop = () => {
                     <Window
                         key='main-fortify'
                         titleBar='https://www.Jacob-Lieber.com/jobs/Fortify'
-                        image='src/assets/job-logos/fortify-logo.png'
+                        image='/assets/job-logos/fortify-logo.png'
                         imageStyle={{ minWidth: '64px'}}
                         data-grid={{ i: 'main-fortify', x: 16, y: 33, w: 10, h: 6 }}
                     />
@@ -174,7 +174,7 @@ const Desktop = () => {
                     <Window
                         key='linkedin'
                         titleBar='https://www.contact-me.com/LinkedIn'
-                        image='src/assets/icons/linkedin.png'
+                        image='/assets/icons/linkedin.png'
                         imageStyle={{width:'150px'}}
                         link='https://www.linkedin.com/in/jacob-lieber/'
                         linkText='My LinkedIn'
@@ -185,7 +185,7 @@ const Desktop = () => {
                     <Window
                         key='email'
                         titleBar='https://www.contact-me.com/gmail'
-                        image='src/assets/icons/gmail.png'
+                        image='/assets/icons/gmail.png'
                         imageStyle={{width:'150px'}}
                         title='jlie&#98;er1&#50;4&#64;&#103;&#109;a&#105;l&#46;com'
                         clickHere='ma&#105;lto&#58;%6Ali%65ber1%3&#50;&#52;&#64;g&#109;a&#105;&#108;&#46;com'
@@ -219,7 +219,7 @@ const Desktop = () => {
                     <Window
                         key='capstone-goal'
                         titleBar='C:/Projects/Capstone/Our-Goal'
-                        image='src/assets/projects/capstone/capstone-logo.png'
+                        image='/assets/projects/capstone/capstone-logo.png'
                         imageStyle={{ width: '100px', margin: 0 }}
                         title='Research Objective'
                         text='For our senior capstone, we decided to design and evaluate a process that is recyclable, sustainably sourced, and affordable'
@@ -239,7 +239,7 @@ const Desktop = () => {
                     <Window
                         key='capstone-process'
                         titleBar='C:/Projects/Capstone/Process'
-                        image='src/assets/projects/capstone/capstone-process.png'
+                        image='/assets/projects/capstone/capstone-process.png'
                         imageStyle={{ minWidth:'450px', width: '90%' }}
                         title='Our Process: Production and Recycling'
                         text='We developed and optimized a manufacturing process for our polymer, from raw glycerol purification through thermal curing stages. Our team also established a sustainable recycling protocol that enables material recovery and reuse through controlled dissolution and filtration.'
@@ -250,7 +250,7 @@ const Desktop = () => {
                     <Window
                         key='capstone-economics'
                         titleBar='C:/Projects/Capstone/Economics'
-                        image='src/assets/projects/capstone/capstone-economics.png'
+                        image='/assets/projects/capstone/capstone-economics.png'
                         imageStyle={{ minWidth: '325px', width: '90%' }}
                         title='Economic Evaluation'
                         list={[
@@ -297,7 +297,7 @@ const Desktop = () => {
                     <Window
                         key='separations-process'
                         titleBar='C:/Projects/Process-Analysis/Process'
-                        image='src/assets/projects/process/separations-pfd.png'
+                        image='/assets/projects/process/separations-pfd.png'
                         imageStyle={{ minWidth: '350px', width: '90%' }}
                         title='Process Design'
                         text='The core of our design featured a high-pressure catalytic reactor system operating at 20 bar. We addressed key engineering challenges including the management of exothermic reaction heat through steam generation, and the optimization of feed ratios to minimize unwanted side reactions.'
@@ -318,7 +318,7 @@ const Desktop = () => {
                     <Window 
                         key='separations-econ-example'
                         titleBar='C:/Projects/Process-Analysis/Econ/Example'
-                        image='src/assets/projects/process/separations-sensitivity.png'
+                        image='/assets/projects/process/separations-sensitivity.png'
                         imageStyle={{ width: '95%' }}
                         data-grid={{ i: 'separations-econ-example', x: 0, y: 29, w: 37, h: 13}}
                     />
@@ -368,7 +368,7 @@ const Desktop = () => {
                     <Window 
                         key='stackunderflow-overview'
                         titleBar='C:/Projects/StackUnderflow/Overview'
-                        image='src/assets/projects/software/stackunderflow.png'
+                        image='/assets/projects/software/stackunderflow.png'
                         imageStyle={{width:'95%'}}
                         title='Similar to Stack Overflow...'
                         text='This project tasked my group with creating a website similar to the Stack Overflow with a focus on adding features beyond simply asking and answering questions. Our groups primary additions were AI-powered features and User Communities.'
@@ -379,7 +379,7 @@ const Desktop = () => {
                     <Window
                         key='stackunderflow-chatgpt'
                         titleBar='C:/Projects/StackUnderflow/AI-integration'
-                        image='/src/assets/projects/software/AI-integration-example.gif'
+                        image='/assets/projects/software/AI-integration-example.gif'
                         imageStyle={{ width:'75%', minWidth:'350px'}}
                         title='AI generated responses'
                         text='By working with the ChatGPT API, we were able to integrate AI into two aspects of our website: asking questions, and getting answers. When asking a question, users are prompted with autocomplete suggestions based on what they&#39;ve typed so far. Additionally, users can opt for an AI response to their question in addition to answers or comments from other users.'
@@ -422,7 +422,7 @@ const Desktop = () => {
                     <Window
                         key='website-overview'
                         titleBar='C:/Projects/Portfolio-Website/Overview'
-                        image='src/assets/Initial Logo.png'
+                        image='/assets/Initial Logo.png'
                         imageStyle={{width:'128px'}}
                         title='jacob95'
                         text='For this project, I created an interactive Windows 95-inspired portfolio website that combines nostalgia with modern web technologies. The goal was to design a unique way to showcase my development skills while paying homage to the iconic user interface of the 90s.'
@@ -457,7 +457,7 @@ const Desktop = () => {
                     <Window
                         key='website-features'
                         titleBar='C:/Projects/Portfolio-Website/Features'
-                        image='src/assets/projects/website/RGL-example.gif'
+                        image='/assets/projects/website/RGL-example.gif'
                         imageStyle={{minWidth:'400px'}}
                         title='The Power of React-Grid-Layout'
                         text='Using the React-Grid-Layout library, I&#39;m able to easily layout my information in windows. Additionally, each window is draggable (from the titlebar) and resizable (from the bottom right corner of the window).'

@@ -11,7 +11,7 @@ const Taskbar = () => {
     return (
         <footer id='taskbar' className='taskbar'>
             <button className='start-button'>
-                <img className='start-button-image' src='src/assets/Initial Logo.png'/>
+                <img className='start-button-image' src='/assets/Initial Logo.png'/>
                 Start
             </button>
             <div className='time'>
