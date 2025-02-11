@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'MSW98UI';
+    src: url('../fonts/MSW98UI-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MSW98UI';
+    src: url('../fonts/MSW98UI-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+
+body {
+    font-family: 'MSW98UI';
+    margin: 0;
+    background-color: teal;
+}
+
+:root {
+    --highlight-color: silver;
+    --highlight-active: #b9b9b9;
+    --border-light: white;
+    --border-dark: #080808;
+}

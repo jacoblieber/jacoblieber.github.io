@@ -1,0 +1,25 @@
+@import url('./window/index.css');
+
+.desktop {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout {
+    left: 22%;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 3%;
+    top: 10%;
+}
+ 
+.nav-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}

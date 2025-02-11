@@ -1,0 +1,101 @@
+.window {
+    background-color: var(--highlight-color);
+    border: solid 1px;
+    padding: 2px;
+    overflow: hidden;
+    border-top-color: var(--border-light);
+    border-left-color: var(--border-light);
+    border-bottom-color: var(--border-dark);
+    border-right-color: var(--border-dark);
+}
+
+.react-grid-item.react-grid-placeholder {
+    /* display: none !important; */
+    background-color: teal;
+    fill-opacity: 0%;
+    border: dashed 2px white;
+}
+
+.window-title-bar {
+    background-color: #000083;
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.window-URL {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: center;
+    padding-top: 2px;
+}
+
+.window-URL:hover {
+    cursor: default;
+}
+
+.window-close {
+    font-family: 'MSW98UI';
+    font-weight: bold;
+    color: black;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: solid 1px;
+    pointer-events: none;
+    background-color: var(--highlight-color);
+    border-top-color: var(--border-light);
+    border-left-color: var(--border-light);
+    border-bottom-color: var(--border-dark);
+    border-right-color: var(--border-dark);
+}
+
+.window-close:active {
+    background-color: var(--highlight-active);
+    border-bottom-color: var(--border-light);
+    border-right-color: var(--border-light);
+    border-top-color: var(--border-dark);
+    border-left-color: var(--border-dark);
+}
+
+.window-body {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.window-image {
+    object-fit: cover;
+    margin: 5px;
+    image-rendering: pixelated;
+}
+
+.window-title {
+    user-select: none;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.window-text {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+
+.window-list-header {
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.window-list-items {
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    list-style-type: square;
+}

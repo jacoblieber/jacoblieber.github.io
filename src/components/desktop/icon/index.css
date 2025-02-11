@@ -1,0 +1,32 @@
+.icon {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    height: 107px;
+    width: 64px;
+}
+
+.icon-image {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    margin-bottom: 5px;
+}
+
+.icon-title {
+    text-align: center;
+    color: white;
+    border: solid 1px rgba(0, 0, 0, 0);
+}
+
+.icon:active .icon-title {
+    background-color: #000083;
+    color: white;
+    border: dashed 1px;
+}
+
+.folder .icon-title {
+    color: black
+}

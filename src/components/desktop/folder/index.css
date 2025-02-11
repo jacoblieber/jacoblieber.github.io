@@ -1,0 +1,68 @@
+.folder {
+    background-color: var(--highlight-color);
+    border: solid 1px;
+    padding: 2px;
+    overflow: hidden;
+    border-top-color: var(--border-light);
+    border-left-color: var(--border-light);
+    border-bottom-color: var(--border-dark);
+    border-right-color: var(--border-dark);
+}
+
+.folder-title-bar {
+    height: 22.1833px;
+    background-color: #000083;
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.folder-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: center;
+    padding-top: 2px;
+}
+
+.folder-title:hover {
+    cursor: default;
+}
+
+.folder-close {
+    font-family: 'MSW98UI';
+    font-weight: bold;
+    color: black;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: solid 1px;
+    background-color: var(--highlight-color);
+    border-top-color: var(--border-light);
+    border-left-color: var(--border-light);
+    border-bottom-color: var(--border-dark);
+    border-right-color: var(--border-dark);
+}
+
+.folder-close:active {
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-right: 3px;
+    padding-bottom: 1px;
+    background-color: var(--highlight-active);
+    border-bottom-color: var(--border-light);
+    border-right-color: var(--border-light);
+    border-top-color: var(--border-dark);
+    border-left-color: var(--border-dark);
+}
+
+.folder-contents {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 64px 64px 64px;
+    grid-template-rows: 107px 107px 107px;
+    gap: 10px;
+    background-color: white;
+}
